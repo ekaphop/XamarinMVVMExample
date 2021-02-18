@@ -4,13 +4,16 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FavoriteMockup" expanded="True">
-            <Node name="FavoriteMockup" selected="True" />
+            <Node name="FavoriteMockup" expanded="True">
+              <Node name="DTO" expanded="True" />
+            </Node>
+            <Node name="FavoriteMockup.Android" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FavoriteMockup.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.FavoriteMockup.Android TriggeredFromHotReload="False" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
