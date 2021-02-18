@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FavoriteTest.Views.FavoritePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding LoginUser}" />
+            <ListView ItemsSource="{Binding ObserveFavoriteItems}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}"
+                                  TextColor="Green"
+                                  Detail="{Binding Description}"
+                                  DetailColor="PaleVioletRed">
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<ListView x:Name="FavoriteListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}"
+                                  TextColor="Green"
+                                  Detail="{Binding Description}"
+                                  DetailColor="PaleVioletRed">
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+        </StackLayout>    
+    </ContentPage.Content>
+</ContentPage>

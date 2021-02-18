@@ -1,0 +1,15 @@
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/bin/Debug/netstandard2.0/FavoriteTest.deps.json
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/bin/Debug/netstandard2.0/FavoriteTest.dll
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/bin/Debug/netstandard2.0/ref/FavoriteTest.dll
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/bin/Debug/netstandard2.0/FavoriteTest.pdb
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/FavoriteTest.csprojAssemblyReference.cache
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/FavoriteTest.AssemblyInfoInputs.cache
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/FavoriteTest.AssemblyInfo.cs
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/FavoriteTest.csproj.CoreCompileInputs.cache
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/FavoriteTest.dll
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/ref/FavoriteTest.dll
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/FavoriteTest.pdb
+/Users/11379831/Documents/GitRepo/MVVM-Udemy/FavoriteTest/FavoriteTest/obj/Debug/netstandard2.0/Views/FavoritePage.xaml.g.cs
