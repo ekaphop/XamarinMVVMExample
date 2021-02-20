@@ -1,0 +1,23 @@
+﻿<!-- ClearPeopleContentView -->
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FavoriteTest.Views.ClearPeople.ClearPeopleContentView">
+    <ContentView.Content>
+        <StackLayout
+            Padding="0"
+            BackgroundColor="White"
+            Spacing="0">
+
+            <!-- Title text -->
+            <StackLayout>
+
+            </StackLayout>
+
+            <!-- Detail text -->
+            <StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

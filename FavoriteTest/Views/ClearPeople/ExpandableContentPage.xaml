@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FavoriteTest.Views.ClearPeople"
+             x:Class="FavoriteTest.Views.ClearPeople.ExpandableContentPage"
+             BackgroundColor="#EFEFF4"
+             >
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0" Spacing="0">
+        <local:ExpandableLabel
+            Title="Title 1"
+            HorizontalOptions="FillAndExpand"
+            Text="Text 1" />
+        <local:ExpandableLabel
+            Title="Title 2"
+            HorizontalOptions="FillAndExpand"
+            Text="Text 2" />
+        <local:ExpandableLabel
+            Title="Title 3"
+            HorizontalOptions="FillAndExpand"
+            Text="Text 3" />
+    </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
