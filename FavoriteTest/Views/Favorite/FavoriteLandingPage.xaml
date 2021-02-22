@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:favorite="clr-namespace:FavoriteTest.Views.Favorite"
+             xmlns:custom="clr-namespace:FavoriteTest.Views.Custom"
+             x:Class="FavoriteTest.Views.Favorite.FavoriteLandingPage"
+             BackgroundColor="White"
+             Title="Favarite Landing Page">
+    <ContentPage.Content>
+        <AbsoluteLayout
+            BackgroundColor="White"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            >
+            <StackLayout Padding="0,0,-10,0">
+            <Grid x:Name="FavoriteLandingPageGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>  
+                </Grid.ColumnDefinitions>
+                <!-- Back Button -->
+                <Button
+                    Grid.Row="0" Grid.Column="0" 
+                    Margin="10,0"
+                    Text="&lt;"
+                    Command="{Binding FavoriteLandingPageBackToHomeScreenCommand}"
+                    >
+                </Button>
+
+                <!-- Favorite Title  -->
+                <Label x:Name="FavoriteLandingPageTitleLabel"
+                    Grid.Row="1" Grid.Column="0"                   
+                    Text="รายการโปรด"
+                    Style="{ DynamicResource Style-Label-Navigation}"
+                    Margin="20,0"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center"
+                    AutomationId="lbl_FavoriteLandingPageTitle_favorite" />
+
+                <!-- FavoriteLandingPage ClickTo EditMode -->
+                <Button
+                    x:Name="FavoriteLandingPageClickToEditMode"
+                    Grid.Row="1" Grid.Column="1"
+                    IsVisible="{Binding IsHaveData}"                   
+                    Text="{Binding ViewOrEditModeText}"
+                    BackgroundColor="White"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    Margin="0,0,10,0"
+                    >
+                </Button>
+
+                <favorite:FavoriteTabBar
+                    x:Name="FavoriteLandingPageTabBar"
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                    ItemsSource="{Binding TabBarItems}"
+                    ItemClickedCommand="{Binding TabSelectedCommand}"/>
+
+                <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                         Padding="0" Margin="0,0,0,0" HeightRequest="10"
+                         IsVisible="{Binding IsHaveData}"
+                         BackgroundColor="LightGray">               
+                </StackLayout>    
+                <!-- ItemSelected="{Binding FavoriteList_ItemSelectd}" -->
+                <ListView
+                    x:Name="FavoriteListItemsListView"
+                     Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+                    IsVisible="{Binding IsHaveData}"
+                    ItemsSource="{Binding FavoriteList_ItemsSource}"            
+                    IsPullToRefreshEnabled="True"
+                    HasUnevenRows="true"
+                    BackgroundColor="White"
+                     Margin="0,0,0,0" >  
+                    <ListView.ItemTemplate>  
+                        <DataTemplate> 
+                            <ViewCell>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button Text="ลบ" IsVisible="{Binding IsEditMode}"/>
+                                        <custom:CircleImage Source="{Binding FavoriteImageUrl}"
+                                                            Grid.Column="0" Grid.Row="0"
+                                                            WidthRequest="40"
+                                                            HeightRequest="40"
+                                                            Margin="10,0,10,0"
+                                                            Aspect="AspectFill" />
+                                        <StackLayout HorizontalOptions="StartAndExpand">
+                                            <Label Text="{Binding FavoriteNickName}"
+                                                   Style="{DynamicResource Style-Favorite-Header-Label-Black}" />
+                                            <Label Text="{Binding FavoriteAccountNo}"
+                                                   Style="{DynamicResource Style-Favorite-Title-Label-Gray}" />
+                                        </StackLayout>
+                                        <Button Text="เลือก" IsVisible="{Binding IsViewMode}" />
+                                        <Button Text="แก้ไข" IsVisible="{Binding IsEditMode}" />
+                                    </StackLayout>
+                                    <BoxView Color="Gray"
+                                                     HeightRequest="1"
+                                                     Margin="0" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>  
+                    </ListView.ItemTemplate>  
+                </ListView>             
+            </Grid>
+            </StackLayout>
+         
+            <!-- Add new favorite modal -->
+            <StackLayout x:Name="FavoriteLandingPageAddNewDataStackLayout"
+                         IsVisible="{Binding IsNoData}"                     
+                         Padding="6"
+                         Orientation="Vertical"
+                         HorizontalOptions="CenterAndExpand"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
+                         >
+                <ImageButton
+                    x:Name="FavoriteLandingPageAddNewDataImageButton"
+                    AutomationId="btn_addnewdata_favorite"
+                    Command="{Binding FavoriteLandingPageAddNewDataImageButtonCommand}"
+                    BackgroundColor="white"
+                    Aspect="AspectFill"
+                    WidthRequest="40" HeightRequest="40" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                 />
+                      
+                <Label Text="เพิ่มรายการโปรด"
+                       Style="{DynamicResource Style-Favorite-Header-Label-Black}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center" />
+                <Label Text="กดเพื่อเพิ่มรายการ"
+                       Style="{DynamicResource Style-Favorite-Title-Label-Gray}"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>         
+            </StackLayout>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

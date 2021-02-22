@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FavoriteTest.Views.Favorite.FavoriteTabBar">
+    <ContentView.Content>
+        <ScrollView x:Name="TabbedBarScrollView"
+                    AutomationId="sld_tab_bar"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalScrollBarVisibility="Never"
+                    HorizontalScrollBarVisibility="Never"
+                    Orientation="Horizontal"
+                    Scrolled="TabbedBarScrollView_Scrolled">
+
+            <Grid BackgroundColor="White"
+                            x:Name="TabBar"
+                            RowSpacing="0"
+                            ColumnSpacing="0"
+                            HorizontalOptions="StartAndExpand"
+                            HeightRequest="51"/>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

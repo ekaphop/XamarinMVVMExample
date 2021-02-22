@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+  <data name="transfer_confamount" xml:space="preserve">
+    <value>NewKMA.Images.Common.transfer_confamount.png</value>
+  </data>
+  <data name="transfer_ConfNote" xml:space="preserve">
+    <value>NewKMA.Images.Common.transfer_ConfNote.png</value>
+  </data>
+  <data name="transfer_confdate" xml:space="preserve">
+    <value>NewKMA.Images.Common.transfer_confdate.png</value>
+  </data>
+  <data name="transfer_confrefno" xml:space="preserve">
+    <value>NewKMA.Images.Common.transfer_confrefno.png</value>
+  </data>
+  <data name="dueDate" xml:space="preserve">
+    <value>NewKMA.Images.Common.dueDate.png</value>
+  </data>
+  <data name="transfer_confref" xml:space="preserve">
+    <value>NewKMA.Images.Common.transfer_confref.png</value>
+  </data>
+  <data name="transfer_ConfSchedule" xml:space="preserve">
+    <value>NewKMA.Images.Common.transfer_ConfSchedule.png</value>
+  </data>
+  <data name="confirmmobileatatm" xml:space="preserve">
+    <value>NewKMA.Images.Transfer.confirmmobileatatm.png</value>
+  </data>
+    <data name="back_to_homepage" xml:space="preserve">
+    <value>Favorite.Images.Common.utility_back_new.png</value>
+  </data>
+    
+</root>

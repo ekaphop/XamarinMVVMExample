@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom1="clr-namespace:NewKMA.Views.Custom"
+             x:Class="FavoriteTest.Views.Favorite.FavoriteTabBarItem">
+    <ContentView.Content>
+                 <Grid BackgroundColor="White" ColumnSpacing="0" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="Item_Clicked"/>
+                            </Grid.GestureRecognizers>
+                            <StackLayout Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="22,0,22,0"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="StartAndExpand">
+                            <custom1:CustomLabel
+                                    x:Name="TabName"
+                                    Style="{DynamicResource Style-17-Label-Black}"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="Black"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="StartAndExpand"/>
+                            <custom1:CustomLabel
+                                    x:Name="TabNameBold"
+                                    IsVisible="False"
+                                    Style="{DynamicResource Style-Bold-17-Label}"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="Black"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="StartAndExpand"/>
+                            </StackLayout>
+                            <BoxView x:Name="YellowLine"
+                                     Grid.Row="1"
+                                     HeightRequest="1"
+                                     IsVisible="false"
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions ="EndAndExpand"                              
+                                     Color="Yellow"/>
+
+                            <!--<BoxView x:Name="YellowLine"
+                                     Grid.Row="1"
+                                     HeightRequest="1"
+                                     IsVisible="false"
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions ="EndAndExpand"
+                                     Style="{StaticResource LineListView}"
+                                     Color="{StaticResource YellowColor}"/>-->
+         </Grid>
+    </ContentView.Content>
+</ContentView>
